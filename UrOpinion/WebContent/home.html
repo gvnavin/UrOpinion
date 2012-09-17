@@ -4,8 +4,11 @@
 <meta charset="utf-8">
 <title>Ur Opinion</title>
 </head>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css">
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css"/>
+<link rel="stylesheet" href="css/978.css"/>
+<link rel="stylesheet" href="css/home.css"/>
+
 <script src="js/jquery-1.8.0.js"></script>
 <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -21,116 +24,45 @@
 
 
 <style type="text/css">
-
-#column1{
-position: absolute;
-margin-left: 12%;
-height: 100%;
-width: 950px;
-border :1px solid black;
-background-color:#FFFFFF;
-}
-
-#top{
-position: relative;
-top: 0px;
-background-color: #330066;
-height: 100px;
-}
-
-#cleft{
-float: left;
-position: relative;
-top: 5px;
-left: 10px;
-width: 200px;
-height: 100px;
-}
-
-#cright{
-position: relative;
-left: 220px ;
-width: 650px;
-height: 100px;
-}
-
-#logo{
-position: relative;
-left: 2px;
-top: 5px; 
-height: 60px;
-width: 200px;
-}
-
-#search_box{
-position: absolute;
-left:35px;
-top: 20px; 
-}
-
-#login{
-position: absolute;
-left: 780px;
-top: 0px; 
-height: 100px;
-width: 244px;
-}
-
-#loginspan{
-position: relative;
-left: 25px;
-top: 20px; 
-height: 100px;
-width: 244px;
-font-size: 15px;
-color: yellow;
-}
-
-body{
-background-color:#AFAAAA;
-}
-
 </style>
 <body >
 
-<div id="column1"> 
-<div id="top">
-<div id="cleft">
-<img src="img/logo.jpg" id="logo">
-</div> <!-- cleft -->
-<div id="cright">
+<div class="layout-978"> 
 
-<form class="form-search" id="search_box">
-<div class="input-append">
-<select class="span2" style="border-radius: 0 0 0 0">
-  <option>All</option>
-  <option>Hotels</option>
-  <option>Theatres</option>
-  <option>Movies</option>
-  <option>Resorts</option>
-</select>
-  <input class="span4" style="border-radius: 0 0 0 0" id="search_inp" size="16" type="text" placeholder="Find Hotels,Theatres,Movies,Resorts..">
-  <button class="btn" style="border-radius: 0 0 0 0" type="button">Go!</button>
-</div>
-</form>
+<div class="row" style="background-color: #330066;">
+	<div class="col3" style="margin-top: 10px;  margin-bottom: 15px; margin-left: 20px; ">	
+		<img src="img/logo.jpg" id="logo">	
+	</div>
 
-</div> 
-<!-- cright -->
-
-<div id="login">
-	<span id="loginspan">
-	<font face="Times New Roman"> Register &nbsp; | &nbsp; Login </font> 
-	</span>
-</div>
-
-</div> <!-- top -->
-
-<div class="alert">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	<div class="col7" style="margin-top: 30px;  margin-bottom: 15px; margin-left: 20px; ">	
+	<form class="form-search" id="search_box">
+		<div class="input-append">
+		<select class="span2" style="border-radius: 0 0 0 0">
+		  <option>All</option>
+		  <option>Hotels</option>
+		  <option>Theatres</option>
+		  <option>Movies</option>
+		  <option>Resorts</option>
+		</select>
+		  <input class="span4" style="border-radius: 0 0 0 0" id="search_inp" size="16" type="text" placeholder="Find Hotels,Theatres,Movies,Resorts..">
+		  <button class="btn" style="border-radius: 0 0 0 0" type="button">Go!</button>
+		</div>
+	</form>
+	</div>
+	<div id="login" class="col2" style="margin-left: 10px; margin-top: 20px">
+		<span id="loginspan">
+			<font face="Times New Roman"> Register &nbsp; | &nbsp; Login </font> 
+		</span>
+	</div>
+	
 </div>
 
-</div> <!-- column1 -->
+<div class="row" style="background-color: white"> 
+	<div class="col12" style="height: 50px">
+	</div>
+</div>
+
+</div>
 
 </body>
 </html>
